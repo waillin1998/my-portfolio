@@ -1,0 +1,96 @@
+.aboutMain {
+  min-height: 0vh;
+  padding-top: 150px;
+  /* background: url("/images/Toppage.jpg") no-repeat center center / cover; */
+  display: flex;
+  align-items: center;
+  margin-left: 6rem;
+  /* justify-content: center; */
+  position: relative;
+  background-attachment: fixed;
+}
+
+.aboutSection {
+  /* margin-left: 6rem; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.overlay {
+  /* margin-left: 6rem; */
+  background-color: rgba(0, 0, 0, 1);
+  color: white;
+  text-align: center;
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 800px;
+  animation: fadeIn 1.2s ease;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+}
+
+.imageWrapper {
+  margin-bottom: 1.5rem;
+}
+
+.image {
+  border-radius: 50%;
+  border: 4px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.textWrapper {
+  margin-top: 1rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.text {
+  font-size: 1.125rem;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+/* Consistent animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* .container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.heading {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.text {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.imageSection {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+} */

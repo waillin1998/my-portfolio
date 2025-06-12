@@ -1,0 +1,85 @@
+/* outer section to allow padding for fixed header and full width */
+.skillMain {
+  padding-top: 90px; /* offset so it sits below fixed nav */
+  padding-bottom: 30rem;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+}
+
+/* The dark overlay “card” */
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+  max-width: 900px;
+  width: 100%;
+  margin: 2rem 1rem;
+  margin-top: 6rem;
+  overflow: hidden;
+  animation: fadeIn 1.2s ease;
+}
+
+/* inner content container */
+.content {
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  color: white;
+}
+
+/* section title */
+.title {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+/* skill pills */
+.skillList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 1rem;
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  justify-items: center;
+}
+
+.skillList li {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: transform 0.2s ease, background 0.3s ease;
+  color: #fff;
+}
+
+.skillList li:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  transform: scale(1.05);
+}
+
+/* fadeIn keyframes (same as other pages) */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* responsive tweaks */
+@media (max-width: 600px) {
+  .content {
+    padding: 2rem 1rem;
+  }
+  .title {
+    font-size: 2rem;
+  }
+}

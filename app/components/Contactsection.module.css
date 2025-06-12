@@ -1,0 +1,129 @@
+/* Thank‐you message */
+.thanks {
+  text-align: center;
+  color: #fff;
+  padding: 2rem 1rem;
+  height: fit-content;
+}
+
+.thanks h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.thanks p {
+  font-size: 1.125rem;
+  line-height: 1.6;
+}
+/* Outer wrapper to offset fixed header */
+.contactMain {
+  min-height: 100vh;
+  padding-top: 70px; /* same offset used elsewhere */
+  display: flex;
+  justify-content: center;
+  background: transparent;
+}
+
+/* Section overlay box */
+.contactSection {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+/* Inner card */
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+  max-width: 600px;
+  width: 100%;
+  padding: 2rem;
+  animation: fadeIn 1.2s ease;
+}
+
+/* Section title */
+.title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+/* Form layout */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Individual field */
+.field {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Labels */
+.label {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+/* Inputs & textarea */
+.input,
+.textarea {
+  background-color: rgba(30, 41, 59, 0.8);
+  border: none;
+  border-radius: 8px;
+  padding: 0.75rem;
+  color: #e5e7eb;
+  font-size: 1rem;
+  outline: none;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input:focus,
+.textarea:focus {
+  background-color: rgba(30, 41, 59, 1);
+  box-shadow: 0 0 0 2px #3b82f6;
+}
+
+/* Submit button */
+.submitBtn {
+  background-color: #3b82f6;
+  color: white;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submitBtn:hover {
+  background-color: #2563eb;
+}
+
+/* Fade-in keyframes (if not already global) */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .overlay {
+    padding: 1.5rem;
+  }
+  .title {
+    font-size: 2rem;
+  }
+}
