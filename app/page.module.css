@@ -1,13 +1,35 @@
 /* List 1 - app/page.module.css */
 .heroSection {
-  height: 90vh;
-  padding-top: 70px;
-  /* background: url("/images/Toppage.jpg") no-repeat center center / cover; */
+  height: 100vh; /* fill the viewport */
+
   display: flex;
   align-items: center;
   justify-content: center;
-  /* position: center; */
-  /* background-attachment: fixed; */
+  margin: 0;
+
+  /* only Home gets this */
+  background-image: url("/images/Toppage.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  /* Remove any fixed so it scrolls away */
+  background-attachment: fixed;
+}
+
+.overlay {
+  .overlay {
+    position: absolute;
+    top: 70px; /* push down below the header */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 800px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 2rem;
+    border-radius: 12px;
+    color: white;
+    text-align: center;
+  }
 }
 
 /* Fixed Header */

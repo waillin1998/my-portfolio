@@ -33,8 +33,12 @@ export default function RootLayout({
                 <Link href="#skill">Skill</Link>
               </li>
               <li>
+                <Link href="#strengths">Strengths</Link>
+              </li>
+              <li>
                 <Link href="#contact">Contact</Link>
               </li>
+
               {/* <li>
                 <Link href="/work">Work</Link>
               </li>

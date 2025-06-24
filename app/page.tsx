@@ -7,6 +7,7 @@ import Skillsection from "./components/Skillsection";
 import ContactPage from "./components/Contactsection";
 // import { useEffect } from "react";
 import styles from "./page.module.css";
+import StrengthSection from "./components/Strenthsection";
 
 export default function HomePage() {
   return (
@@ -21,6 +22,7 @@ export default function HomePage() {
       <Aboutsection />
       <Profilesection />
       <Skillsection />
+      <StrengthSection />
       <ContactPage />
     </main>
   );

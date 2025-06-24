@@ -84,18 +84,9 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-
-  /* Site-wide fixed background */
-  background-image: url("/images/Toppage.jpg");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  background-attachment: fixed;
-  min-height: 110vh;
-
-  /* your existing font, color, etc. */
+  background-color: #fff; /* Pure white everywhere by default */
   font-family: "Fira Code", monospace;
-  color: #e2e8f0;
+  color: #111;
 }
 
 /* body {

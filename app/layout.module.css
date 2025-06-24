@@ -7,8 +7,8 @@
   z-index: 1000;
   background-color: rgba(0, 0, 0, 0.7);
   backdrop-filter: blur(8px);
-  padding: 0.75rem 1rem;
-  height: 80px;
+  /* padding: 0.75rem 1rem; */
+  height: 70px;
 }
 
 .navLinks ul {
@@ -18,7 +18,7 @@
   gap: 1rem;
   list-style: none;
   margin: 0;
-  padding: 17px;
+  padding: 10px;
 }
 
 .navLinks a {
@@ -36,6 +36,6 @@
   transform: translateY(-3px);
 }
 
-.mainContent {
-  padding-top: 70px; /* Prevent content from hiding behind fixed nav */
-}
+/* .mainContent {
+  padding-top: 70px; 
+} */
