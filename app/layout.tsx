@@ -38,22 +38,6 @@ export default function RootLayout({
               <li>
                 <Link href="#contact">Contact</Link>
               </li>
-
-              {/* <li>
-                <Link href="/work">Work</Link>
-              </li>
-              <li>
-                <Link href="/skill">Skill</Link>
-              </li>
-              <li>
-                <Link href="/strengths">Strengths</Link>
-              </li>
-              <li>
-                <Link href="/hobby">Hobby</Link>
-              </li>
-              // <li>
-              //   <Link href="/contact">Contact</Link>
-              // </li> */}
             </ul>
           </nav>
         </header>
