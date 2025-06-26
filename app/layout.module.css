@@ -1,5 +1,6 @@
-/* app/layout.module.css */
-/* app/layout.module.css */
+/* ===============================
+   Header & Nav Layout
+================================= */
 
 .header {
   position: fixed;
@@ -11,13 +12,18 @@
   background-color: rgba(0, 0, 0, 0.7);
   backdrop-filter: blur(8px);
   display: flex;
-  justify-content: flex-end; /* Align nav to the right */
-  align-items: center; /* Center vertically */
-  padding-right: 1rem; /* Add spacing from right */
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 1rem;
 }
+
+/* ===============================
+   Navigation Links
+================================= */
 
 .navLinks ul {
   display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
   list-style: none;
   margin: 0;
@@ -27,23 +33,22 @@
 .navLinks li {
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 
 .navLinks a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  height: 40px;
   min-width: 90px;
-  background: rgba(3, 114, 232, 0.84);
+  height: 40px;
   padding: 0.5rem 1rem;
+  background: rgba(3, 114, 232, 0.84);
   border-radius: 6px;
   color: white;
   text-decoration: none;
   font-weight: 500;
-  transition: background 0.3s ease, transform 0.2s ease;
   text-align: center;
+  transition: background 0.3s ease, transform 0.2s ease;
 }
 
 .navLinks a:hover {
@@ -51,6 +56,38 @@
   transform: translateY(-3px);
 }
 
-/* .mainContent {
-  padding-top: 80px; 
-} */
+/* ===============================
+   Main Content Padding
+================================= */
+
+.mainContent {
+  padding-top: 80px; /* Space for fixed header */
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* ===============================
+   Responsive Navigation
+================================= */
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-end;
+    height: auto;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .navLinks ul {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.5rem;
+  }
+
+  .navLinks a {
+    min-width: auto;
+    width: 100%;
+    justify-content: flex-end;
+  }
+}

@@ -22,7 +22,14 @@ export default function HomePage() {
               <span className={styles.highlight}>WAI LIN AUNG</span>
             </h1>
             <p className={styles.subtitle}>an aspiring Frontend Developer</p>
-            <button className={styles.button}>View my Work</button>
+            <a
+              className={styles.button}
+              href="https://bookshop-pi-ten.vercel.app/index.html"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View my Work
+            </a>
           </div>
           <div className={styles.imageArea}>
             <Image
