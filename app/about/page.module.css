@@ -1,26 +1,41 @@
 .aboutMain {
   min-height: 0vh;
   padding-top: 150px;
-  /* background: url("/images/Toppage.jpg") no-repeat center center / cover; */
+  padding-bottom: 150px;
+  flex-direction: column;
   display: flex;
   align-items: center;
   margin-left: 6rem;
-  /* justify-content: center; */
-  position: relative;
-  background-attachment: fixed;
+  justify-content: center;
+  /* position: relative; */
+  /* background-attachment: fixed; */
 }
 
-.aboutSection {
-  /* margin-left: 6rem; */
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 2.5rem;
+  color: black;
+  text-align: center;
+}
+
+.textWrapper {
+  max-width: 1000px;
+  padding: 0 1rem;
+}
+
+.overlay {
+  display: none;
+}
+
+/* .aboutSection {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 2rem;
-}
+} */
 
-.overlay {
-  /* margin-left: 6rem; */
+/* .overlay {
   background-color: rgba(0, 0, 0, 1);
   color: white;
   text-align: center;
@@ -29,9 +44,9 @@
   max-width: 800px;
   animation: fadeIn 1.2s ease;
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
-}
+} */
 
-.imageWrapper {
+/* .imageWrapper {
   margin-bottom: 1.5rem;
 }
 
@@ -48,10 +63,10 @@
 .title {
   font-size: 2.5rem;
   margin-bottom: 1rem;
-}
+} */
 
 .text {
-  font-size: 1.125rem;
+  font-size: 1.5rem;
   margin-bottom: 1rem;
   line-height: 1.6;
 }

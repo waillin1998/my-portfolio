@@ -8,16 +8,38 @@ import ContactPage from "./components/Contactsection";
 // import { useEffect } from "react";
 import styles from "./page.module.css";
 import StrengthSection from "./components/Strenthsection";
+import Image from "next/image";
 
 export default function HomePage() {
   return (
     <main>
       <section id="home" className={styles.heroSection}>
-        {/* Hero Text */}
-        <div className={styles.overlay}>
-          <h1 className={styles.title}>Hi, I&apos;m WAI LIN AUNG</h1>
-          <p className={styles.subtitle}>Aspiring Front-End Developer</p>
+        {/* <div className={styles.overlay}> */}
+        <div className={styles.content}>
+          <div className={styles.textArea}>
+            <h1 className={styles.title}>
+              Hi, I&apos;m{" "}
+              <span className={styles.highlight}>WAI LIN AUNG</span>
+            </h1>
+            <p className={styles.subtitle}>an aspiring Frontend Developer</p>
+            <button className={styles.button}>View my Work</button>
+          </div>
+          <div className={styles.imageArea}>
+            <Image
+              src="/images/profile.jpg"
+              alt="Profile"
+              width={300}
+              height={300}
+              className={styles.heroImage}
+              priority
+            />
+          </div>
         </div>
+        {/* </div> */}
+        {/* <div className={styles.overlay}>
+          <h1 className={styles.title}>Hi, I&apos;m WAI LIN AUNG</h1>
+          <p className={styles.subtitle}>an aspiring Fronted Developer</p>
+        </div> */}
       </section>
       <Aboutsection />
       <Profilesection />

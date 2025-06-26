@@ -7,8 +7,8 @@ export default function StrengthSection() {
   return (
     <section id="strengths" className={styles.strengthSection}>
       <motion.div
-        className={styles.overlay}
-        initial={{ opacity: 0, y: 40 }}
+        className={styles.textWrapper}
+        initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
@@ -17,30 +17,29 @@ export default function StrengthSection() {
 
         <ul className={styles.list}>
           <li>
-            <strong>JLPT N2 Certified</strong>
-            <br />I can understand everyday conversation and read Japanese
-            articles with confidence.
-          </li>
-          <li>
-            <strong>English Communication</strong>
-            <br />I can comfortably communicate in English — both writing and
-            speaking.
-          </li>
-          <li>
-            <strong>Listening Skills</strong>
+            <strong>JLPT N2 合格</strong>
             <br />
-            I’m good at listening carefully to people and understanding their
-            needs.
+            日常会話がわかり、日本語の記事も自信をもって読むことができます。
           </li>
           <li>
-            <strong>Curiosity & Self-Learning</strong>
-            <br />I always research topics deeply when I don’t understand
-            something. I enjoy learning new tech!
+            <strong>英語コミュニケーション</strong>
+            <br />
+            英語で話すことも書くことも、問題なくできます。
           </li>
           <li>
-            <strong>Logical Thinking</strong>
-            <br />I enjoy puzzles, coding challenges, and solving problems
-            step-by-step.
+            <strong>聞く力</strong>
+            <br />
+            人の話をよく聞いて、相手の気持ちや必要なことを理解するのが得意です。
+          </li>
+          <li>
+            <strong>好奇心と独学</strong>
+            <br />
+            わからないことがあると、しっかり調べます。新しい技術を学ぶのが好きです。
+          </li>
+          <li>
+            <strong>論理的思考</strong>
+            <br />
+            パズルやコーディングの問題を一つずつ考えて解くのが好きです。
           </li>
         </ul>
       </motion.div>
